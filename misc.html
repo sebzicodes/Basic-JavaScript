@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"> </div> 
+    <button id="sayhello">Click Here!</button>
+    <button id="clear">Clear Output</button>
+    <button id="red">Make Red</button>
+    <script>
+        const helloButton = document.getElementById("sayhello");
+        const clearButton = document.getElementById("clear");
+        const outputElement = document.getElementById("output");
+        const redButton = document.getElementById("red");
+        
+        helloButton.onclick = () => {
+            outputElement.innerText = "Hello World";
+        }
+        clearButton.onclick = () => {
+            outputElement.innerText = "";
+        }
+        redButton.onclick = () => {
+            outputElement.style.color = "red";
+        }
+        
+    </script>
+</body>
+</html>

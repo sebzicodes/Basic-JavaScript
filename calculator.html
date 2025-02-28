@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button id="add">add</button>
+    <div id="sum"></div>
+
+<script>
+const num1Input = document.getElementById("num1");
+const num2Input = document.getElementById("num2");
+const addButton = document.getElementById("add");
+const sumDiv = document.getElementById("sum");
+
+addButton.onclick = () => {
+    const num1 = Number(num1Input.value);
+    const num2 = Number(num2Input.value);
+    const sum = num1 + num2;
+    sumDiv.innerText = sum;
+}
+
+
+</script>
+
+
+</body>
+</html>
